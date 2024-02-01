@@ -8,3 +8,5 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 NewsAPI: 3d1e29e218974d49bc286e75adaffd19
 VITE_API_KEY=your-api-key
 import.meta.env.VITE_API_KEY
+
+# Quiz App Notes
