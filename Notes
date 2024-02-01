@@ -9,4 +9,24 @@ NewsAPI: 3d1e29e218974d49bc286e75adaffd19
 VITE_API_KEY=your-api-key
 import.meta.env.VITE_API_KEY
 
-# Quiz App Notes
+# Deploy a React Vite Project Using github
+
+step 1 : Install gh-pages
+npm install gh-pages --save-dev
+step 2 : In your package.json file, add the scripts:
+"scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist",
+-------
+}  
+step 3 : In vite.config.js file, set the base property to your repository name
+export default {
+base: '/your-repo/',
+};
+step 4 : Build Your Vite App
+npm run build
+step 5 : Deploy to GitHub Pages
+npm run deploy
+
+step 6 :
+step 7:
