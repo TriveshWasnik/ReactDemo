@@ -8,25 +8,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 NewsAPI: 3d1e29e218974d49bc286e75adaffd19
 VITE_API_KEY=your-api-key
 import.meta.env.VITE_API_KEY
+-------XXXX--------------
 
-# Deploy a React Vite Project Using github
 
-step 1 : Install gh-pages
+Deploy React Vite app using github detailed
+============================================
+1. Install gh-pages Package:
 npm install gh-pages --save-dev
-step 2 : In your package.json file, add the scripts:
+2. Update package.json Scripts:
+Open your package.json file and add or modify the scripts section:
 "scripts": {
-"predeploy": "npm run build",
-"deploy": "gh-pages -d dist",
-
-}  
-step 3 : In vite.config.js file, set the base property to your repository name
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  // ... other scripts
+}
+5. Configure Vite for GitHub Pages:
+Open your vite.config.js file and set the base property to your repository name:
 export default {
-base: '/your-repo/',
+  base: '/your-repo/',
 };
-step 4 : Build Your Vite App
+6. Build Your Vite App:
 npm run build
-step 5 : Deploy to GitHub Pages
+7. Deploy to GitHub Pages:
 npm run deploy
+8. Configure GitHub Pages in Repository Settings:
+Go to your GitHub repository, navigate to the "Settings" tab.
+Scroll down to the "GitHub Pages" section.
+In the "Source" dropdown, select gh-pages branch and save.
+9. Access Your Deployed App:
+After a few minutes, your Vite app should be accessible at https://your-username.github.io/your-repo.
+Remember to replace "your-username" and "your-repo" with your GitHub username and repository name.
 
-step 6 :
-step 7:
+These steps assume that your Vite app uses the default build output directory (dist). Adjust the paths in the scripts and configuration files if your build output is different. Also, ensure that your Vite app's routing is configured correctly for GitHub Pages if you're using client-side routing.
