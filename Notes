@@ -1,0 +1,14 @@
+# how to use bootstrap in React
+
+step 1 : Install Bootstrap Package
+npm install bootstrap
+step 2 : Import Bootstrap CSS in index.js/main.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+badge bg-light text-dark fs-4
+badge bg-danger
+text-center
+
+NewsAPI: 3d1e29e218974d49bc286e75adaffd19
+VITE_API_KEY=your-api-key
+import.meta.env.VITE_API_KEY
