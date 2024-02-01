@@ -17,7 +17,7 @@ step 2 : In your package.json file, add the scripts:
 "scripts": {
 "predeploy": "npm run build",
 "deploy": "gh-pages -d dist",
--------
+
 }  
 step 3 : In vite.config.js file, set the base property to your repository name
 export default {
